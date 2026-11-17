@@ -25,6 +25,15 @@ namespace ExemplesAJAX.Controllers
             return View();
         }
 
+        public IActionResult Partielle()
+        {
+            return PartialView();
+        }
+        public IActionResult Partielle2(Partielle2DTO dto)
+        {
+            return PartialView(dto);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
